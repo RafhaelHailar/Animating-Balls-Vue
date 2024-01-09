@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Circle Animations</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+    <div id="app">
+        <div>
+            <button v-on:click="changeAnimation('rotate-x')">Rotate X</button>
+            <button v-on:click="changeAnimation('rotate-y')">Rotate Y</button>
+            <button v-on:click="changeAnimation('rotate-z')">Rotate Z</button>
+            <button>Rotate</button>
+            <button>Rotate</button>
+            <button>Rotate</button>
+            <button>Rotate</button>
+            <button>Rotate</button>
+            <button>Rotate</button>
+            <button>Rotate</button>
+            <button>Rotate</button>
+        </div>
+        <div>
+            <div id="ball" v-bind:class="animation"></div>
+        </div>
+    </div>
+    <script type="text/javascript" src="./main.js"></script>
+</body>
+</html>
