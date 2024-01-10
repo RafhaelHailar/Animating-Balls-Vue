@@ -9,20 +9,20 @@
 </head>
 <body>
     <div id="app">
-        <div>
+        <div >
             <button v-on:click="changeAnimation('rotate-x')">Rotate X</button>
             <button v-on:click="changeAnimation('rotate-y')">Rotate Y</button>
             <button v-on:click="changeAnimation('rotate-z')">Rotate Z</button>
-            <button>Rotate</button>
-            <button>Rotate</button>
-            <button>Rotate</button>
-            <button>Rotate</button>
-            <button>Rotate</button>
+            <button v-on:click="changeAnimation('jump')">Jump</button>
+            <button v-on:click="changeAnimation('slide-x')">Slide X</button>
+            <button v-on:click="changeAnimation('slide-y')">Slide Y</button>
+            <button v-on:click="changeAnimation('slide-z')">Slide Z</button>
+            <button v-on:click="changeAnimation('falling')">Fall</button>
             <button>Rotate</button>
             <button>Rotate</button>
             <button>Rotate</button>
         </div>
-        <div>
+        <div v-bind:style="{overflow: overflow}">
             <div id="ball" v-bind:class="animation"></div>
         </div>
     </div>
